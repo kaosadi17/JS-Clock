@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Digital Clock</title>
+    </head>
+    <body>
+        <div id="digitalclock"></div>
+        <script type="text/javascript">
+            function showTime(){
+                var date = new Date();
+                var h = date.getHours();
+                var m = date.getMinutes();
+                var s = date.getSeconds();
+
+                var time = h + ":" + m + ":" + s;
+                document.getElementById("digitalclock").innerText = time;
+            }
+        </script>
+        showTime()
+    </body>
+</html>
